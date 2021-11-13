@@ -1,0 +1,47 @@
+#CSS
+header {
+    background-color:blue
+}
+header button {
+    background-color:blue
+} 
+header p {
+    color:pink
+}
+
+#SASS
+
+$Headerbgcolor:blue
+$Txtcolor:pink
+
+header {
+    background-color:$Headerbgcolor
+    
+    button {
+        background-color:$Headerbgcolor
+    }
+    
+    p {
+        color:$Txtcolor
+    }
+}
+
+#LESS
+
+@Headerbgcolor:blue
+@Txtcolor:pink
+
+.bgstyle {
+    background-color:@Headerbgcolor
+}
+header:extend(.bgstyle) {
+
+}
+
+header button:extend (.bgstyle) {
+
+}
+
+header p {
+    color:@Txtcolor
+}
